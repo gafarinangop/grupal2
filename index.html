@@ -1,50 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <style>
-      * {
-        margin: 20px;
-        text-align: center;
-        font-family: "Times New Roman";
-      }
-      body {
-        background-color: #3c2684; 
-        margin: 0;
-        padding: 0;
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
-        height: 100vh; 
-      }
-      .container {
-        text-align: center; /* Centrar texto dentro del contenedor */
-        background-color: white; 
-        padding: 40px; 
-        border-radius: 8px; 
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-      }
-      hr {
-        width: 50%;
-        margin: auto;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller de JavaScript</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <div class="container">
-    <h1>Registro</h1>
-    <form method="post" action="img/ingreso.php">
-      Nombre de usuario:<br>
-      <input type="text" name="username" id="username" required><br>
-      Contraseña:<br>
-      <input type="password" name="psw" required><br>
-      <hr>
-      <input type="submit" name="submit1" value="Ingresar"> 
-      <input type="reset" name="reset1" value="Borrar"><br>
-      <input type="button" onclick="alert('Anguisaca Andrea, Farinango Grace, Morales Josselyn, Nuñez Alejandro, Viteri Ian (usuario:tallergrupal||contraseña:12345)')" value="Integrantes/Datos de Ingreso">
-    </form>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Escudo_de_la_Universidad_Central_del_Ecuador_-_Andr%C3%A9s_Agual.png" alt="UCE">
+    <h1><p id="titulo"></h1>
+
+    <table>
+      <tr>
+          <th colspan="2">Datos Personales</th>
+      </tr>
+      <tr>
+          <td>Nombre Completo:</td>
+          <td><p id="nombre"></p></td>
+      </tr>
+      <tr>
+          <td>Edad:</td>
+          <td><p id="edad"></p></td>
+      </tr>
+      <tr>
+          <td>Correo Electrónico:</td>
+          <td><p id="correo"></p></td>
+      </tr>
+      <tr>
+          <td>Teléfono:</td>
+          <td><p id="telefono"></p></td>
+      </tr>
+      <tr>
+          <td>Género:</td>
+          <td><p id="genero"></p></td>
+      </tr>
+      <tr>
+          <td>Dirección:</td>
+          <td><p id="direccion"></p></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+          <th colspan="2">Datos de Interés</th>
+      </tr>
+      <tr>
+          <td>Institución Educativa:</td>
+          <td><p id="insti"></p></td>
+      </tr>
+      <tr>
+          <td>Nivel Educativo:</td>
+          <td><p id="nivel"></p></td>
+      </tr>
+      <tr>
+          <td>Áreas de Interés:</td>
+          <td><p id="interes"></p></td>
+      </tr>
+      <tr>
+          <td>Experiencia en el área:</td>
+          <td><p id="experiencia"></p></td>
+      </tr>
+      <tr>
+          <td>¿Estás buscando empleo?</td>
+          <td><p id="empleo"></p></td>
+      </tr>
+      <tr>
+          <td>Preferencia de formato de curso:</td>
+          <td><p id="formato"></p></td>
+      </tr>
+      <tr>
+          <td>Fecha de Inscripción:</td>
+          <td><p id="fecha"></p></td>
+      </tr>
+      <tr>
+          <td>Comentarios adicionales:</td>
+          <td><p id="comentarios"></p></td>
+      </tr>
+    </table>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
